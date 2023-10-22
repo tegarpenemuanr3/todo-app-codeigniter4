@@ -9,7 +9,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2>Detail Todo</h2>
                 <div>
-                    <a href="javascript:history.back()" class="btn btn-warning">
+                    <a href="<?= base_url() ?>todo" class="btn btn-warning">
                         <i class="fas fa-arrow-left"></i> Kembali
                     </a>
                 </div>

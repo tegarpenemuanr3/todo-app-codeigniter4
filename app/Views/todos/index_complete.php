@@ -4,10 +4,10 @@
 <div class="row">
     <div class="col-md-12">
         <div class="d-flex justify-content-between align-items-center">
-            <h1>List Todo</h1>
+            <h1>List Todo Complete</h1>
             <div>
-                <a href="<?= base_url() ?>todo/complete" class="btn btn-success">
-                    <i class="fas fa-list"></i> List todo complete
+                <a href="<?= base_url() ?>todo" class="btn btn-warning">
+                    <i class="fas fa-arrow-left"></i> Kembali
                 </a>
             </div>
         </div>

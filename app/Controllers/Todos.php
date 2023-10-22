@@ -16,8 +16,14 @@ class Todos extends BaseController
     
     public function index()
     {
-        $data['todos'] = $this->userModel->findAll();
+        $data['todos'] = $this->userModel->where('status', 'belum')->findAll();
         return view('todos/index', $data);
+    }
+
+    public function index_complete()
+    {
+        $data['todos'] = $this->userModel->where('status', 'selesai')->findAll();
+        return view('todos/index_complete', $data);
     }
 
     public function view($id)
