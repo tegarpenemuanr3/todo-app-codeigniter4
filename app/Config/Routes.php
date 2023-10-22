@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 $routes->get('todo', 'Todos::index');
+$routes->get('todo/detail/(:num)', 'Todos::view/$1');

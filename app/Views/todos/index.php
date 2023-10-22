@@ -13,6 +13,12 @@
                         <?= $todo->title ?>
                     </label>
                 </div>
+                <div class="no-wrap">
+                    <a href="<?= base_url() ?>todo/detail/<?= $todo->id ?>" class="btn btn-info btn-sm"
+                        data-toggle="tooltip" data-placement="top" title="Detail">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
             </li>
             <?php endforeach; ?>
         </ul>

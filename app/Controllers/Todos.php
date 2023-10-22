@@ -19,6 +19,12 @@ class Todos extends BaseController
         $data['todos'] = $this->userModel->findAll();
         return view('todos/index', $data);
     }
+
+    public function view($id)
+    {
+        $data['todo'] = $this->userModel->find($id);
+        return view('todos/detail', $data);
+    }
 }
 
 // Dibuat dengan:
